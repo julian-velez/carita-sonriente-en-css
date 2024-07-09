@@ -1,0 +1,40 @@
+.emoji {
+  width: 200px; /* Aumenta el tamaño a 200px */
+  height: 200px; /* Aumenta el tamaño a 200px */
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.emoji::before,
+.emoji::after {
+  content: "";
+  width: 30px; /* Aumenta el tamaño de los ojos */
+  height: 50px; /* Aumenta el tamaño de los ojos */
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px; /* Ajusta la posición de los ojos */
+}
+
+.emoji::before {
+  left: 50px; /* Ajusta la posición del ojo izquierdo */
+}
+
+.emoji::after {
+  right: 50px; /* Ajusta la posición del ojo derecho */
+}
+
+.smile {
+  width: 120px; /* Aumenta el tamaño de la sonrisa */
+  height: 60px; /* Aumenta el tamaño de la sonrisa */
+  border: 10px solid black; /* Aumenta el grosor del borde */
+  border-color: transparent transparent black transparent;
+  border-radius: 0 0 100px 100px; /* Ajusta el radio del borde */
+  position: absolute;
+  bottom: 40px; /* Ajusta la posición de la sonrisa */
+  left: 50%;
+  transform: translateX(-50%);
+}
